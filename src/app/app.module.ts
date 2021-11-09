@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+//import { RouterModule} from "@angular/router"; //risinājums no stack overflow, kurš nepalīdzēja
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
     MessagesComponent
   ],
   imports: [
+    //RouterModule,   //risinājums no stack overflow, kurš nepalīdzēja
     BrowserModule,
     FormsModule,
     AppRoutingModule
